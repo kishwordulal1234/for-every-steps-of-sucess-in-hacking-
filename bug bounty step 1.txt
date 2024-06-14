@@ -1,0 +1,200 @@
+1. Domain Choosing
+   ├── Your preference
+   ├── Choose with more functions
+   ├── Attack surface / scope with wildcard
+   ├── DomainHunter
+   ├── DnsDumpster
+   ├── DNSrecon
+   ├── Domainr
+   ├── WhoisXML API
+   ├── DNSDB
+   └── SecurityTrails
+
+2. Acquisition Finding Based on Program Scope
+   ├── Acquisition of the target like emergent company of the target
+   ├── LinkedIn
+   ├── Crunchbase
+   ├── BuiltWith
+   ├── Hunter.io
+   ├── Owler
+   ├── ZoomInfo
+   └── PitchBook
+
+3. Subdomain Finding (At least 5 methods with minimum 5 level of final subdomain list)
+   ├── Active: Amass
+   ├── Passive: Amass
+   ├── Bruteforcing: Knockpy
+   ├── Subfinder
+   ├── Assetfinder
+   ├── Online tools
+   ├── crt.sh
+   └── Anew
+       └── Try to get as much as higher level of sub sub domain
+
+3.1. Try Subdomain Takeover
+   ├── Subzy
+   └── Broken Link Hijacking: Socialhunter
+   ├── Subjack
+   ├── CanITakeOverXYZ
+   ├── SubOver
+   ├── Takeover
+   └── TKO-Subs
+
+4. Alive Subdomains
+   ├── httpx
+   ├── httpx-toolkit
+   └── Subfinder: target.txt -dl -o try2.txt
+   ├── HTTProbe
+   ├── Eyewitness
+   ├── WebProbe
+   └── AliveCheck
+
+5. Visual Recon
+   └── Look yourself on the target for functionalities and input fields (search, comment, upload, etc.)
+   ├── Burp Suite
+   ├── OWASP ZAP
+   ├── Ffuf
+   ├── Dirsearch
+   ├── Gobuster
+   ├── Nikto
+   └── WhatWeb
+
+6. Sorting Based on Technologies with All Information
+   ├── Nuclei
+   ├── Nikto
+   ├── Nmap
+   └── Tool: Aquatone
+   ├── Wappalyzer
+   ├── WhatWeb
+   └── BuiltWith
+
+7. Reverse IP Lookups
+   ├── Reverse IP Lookup Tool
+   ├── ViewDNS
+   ├── HackerTarget Reverse IP
+   ├── YouGetSignal
+   ├── Rpd.tools
+   ├── SecurityTrails
+   └── Shodan Reverse DNS Lookup
+
+8. Collecting All URLs from Source Code
+   ├── Subjs
+   ├── Urlscript
+   └── getallurls target.com | grep js, txt, and so on
+   ├── LinkFinder
+   ├── GAU (GetAllUrls)
+   ├── Waybackurls
+   └── JSLinkFinder
+
+9. Finding Parameters and Hidden Parameters from Different Tools
+   ├── Arjun
+   ├── XNL
+   ├── Paramspider
+   ├── Adrishyaspider
+   └── URO
+   ├── Kiterunner
+   └── ParamMiner (Burp Suite Extension)
+   ├── Parameth
+   └── ParameterTamper
+
+10. Using Waymore and Other URL Scraping Tools
+    ├── Waymore
+    └── Adrishyaspider
+    ├── Urlcrazy
+    ├── URLFinders
+    ├── LinkChecker
+    ├── Gauplus
+    └── Hakrawler
+
+11. Using Grep or Custom Tool to Find Information from Waymore File
+    ├── Waymore
+    ├── Adrishyaspider
+    └── Getallurls
+    ├── Grep
+    └── RipGrep
+    ├── Findomain
+    ├── Unfurl
+    └── UrlBrute
+
+12. Collecting JS Files and Looking for Information
+    ├── Subjs
+    ├── JScollector
+    └── Run Nuclei
+    ├── JSParser
+    ├── LinkFinder
+    ├── SecretFinder
+    └── Assetnote JSCollector
+
+13. Google Dorking for Possible Available Information
+    └── Bugbounty search engine
+    ├── Google Dorks
+    ├── DorkSearch
+    ├── Dorker
+    ├── GHDB (Google Hacking Database)
+    ├── ExploitDB
+    └── Intellifind
+
+14. GitHub Recon Manually for Info Disclosure
+    ├── Gitrob
+    ├── GitGraber
+    ├── Gitleaks
+    ├── TruffleHog
+    └── GitHound
+    ├── Gitscanner
+    └── Gitdorks
+
+15. Check Employees' GitHub Repos
+    ├── Gitrob
+    ├── GitGraber
+    ├── Gitleaks
+    ├── TruffleHog
+    └── GitHound
+    ├── Gitscanner
+    └── Gitdorks
+
+16. Checking Already Disclosed Reports for Possible Information
+    ├── HackerOne
+    ├── Bugcrowd
+    └── OpenBugBounty
+    ├── Vulners
+    └── Exploit-DB
+    ├── Synack
+    └── ZeroDay Initiative
+
+17. Checking Third Party Services for Configuration
+    └── Adrishyaspider
+    ├── Shodan
+    ├── Censys
+    ├── BinaryEdge
+    ├── SecurityTrails
+    └── ZoomEye
+    ├── Onyphe
+    └── Fofa
+
+18. Shodan, Zoomeye, Censys for Possible Attack Surface and Information
+    ├── Shodan
+    ├── Censys
+    └── Zoomeye
+    ├── BinaryEdge
+    ├── Onyphe
+    ├── Fofa
+    └── GreyNoise
+
+19. Checking Plugins and Integrations
+    ├── Wappalyzer
+    ├── WPScan
+    └── Plugscanner
+    ├── WhatWeb
+    ├── BuiltWith
+    ├── CMSmap
+    └── CMSeeK
+
+20. Checking WAF for Misconfiguration
+    └── WafW00f
+    ├── Nmap WAF detection scripts
+    ├── WAFDetect
+    ├── WAFNinja
+    ├── WhatWaf
+    ├── WaFBypass
+    └── GFwaf
+

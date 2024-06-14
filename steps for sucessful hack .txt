@@ -1,0 +1,161 @@
+1. Pre-engagement Steps
+   ├── Define Scope and Objectives
+   │   ├── Identify target systems and assets
+   │   ├── Determine rules of engagement (ROE)
+   │   ├── Obtain necessary permissions and legal agreements
+   │   ├── Clarify testing objectives and constraints
+   │   └── Document scope and agreements
+   ├── Intelligence Gathering (Reconnaissance)
+   │   ├── Passive Information Gathering
+   │   │   ├── OSINT (Open Source Intelligence) Collection
+   │   │   │   ├── Tools: Maltego, theHarvester, SpiderFoot
+   │   │   │   └── Techniques: Social media analysis, domain footprinting
+   │   │   ├── Social Engineering
+   │   │   │   ├── Tools: SET (Social-Engineer Toolkit), BeEF (Browser Exploitation Framework)
+   │   │   │   └── Techniques: Phishing, pretexting, information elicitation
+   │   │   ├── Footprinting
+   │   │   │   ├── Tools: Recon-ng, OSRFramework, Shodan
+   │   │   │   └── Techniques: DNS enumeration, WHOIS lookup, network mapping
+   │   │   └── Phishing Campaigns
+   │   │       ├── Tools: GoPhish, PhishX, Evilginx
+   │   │       └── Techniques: Spear phishing, credential harvesting
+   │   └── Active Information Gathering
+   │       ├── Network Scanning
+   │       │   ├── Tools: Nmap, Masscan, Zmap
+   │       │   └── Techniques: Port scanning, service version detection
+   │       ├── Vulnerability Scanning
+   │       │   ├── Tools: Nessus, OpenVAS, Nexpose
+   │       │   └── Techniques: Automated vulnerability assessment
+   │       ├── Enumeration
+   │       │   ├── Tools: Enum4linux, SMBMap, ldapsearch
+   │       │   └── Techniques: User enumeration, share enumeration, LDAP querying
+   │       └── Exploit Research
+   │           ├── Tools: Exploit-DB, Metasploit, CVE databases
+   │           └── Techniques: Identifying and testing known vulnerabilities
+   └── Tools
+       ├── Burp Suite (Web application security testing)
+       ├── Metasploit Framework (Exploitation framework)
+       ├── Cobalt Strike (Adversary simulation tool)
+       └── Empire (Post-exploitation framework)
+
+2. Threat Modeling and Vulnerability Analysis
+   ├── Threat Modeling
+   │   ├── Identify potential threats and attack vectors
+   │   ├── Prioritize assets and attack paths
+   │   ├── Construct threat scenarios (Red Team vs. Blue Team exercises)
+   │   ├── Assess likelihood and impact of threats
+   │   └── Document threat model
+   ├── Vulnerability Analysis
+   │   ├── Manual Vulnerability Verification
+   │   │   ├── Techniques: Manual verification of vulnerabilities discovered
+   │   │   └── Tools: Manual testing scripts, custom exploit development
+   │   ├── Exploitation Framework Utilization
+   │   │   ├── Techniques: Automated exploitation using frameworks
+   │   │   └── Tools: Metasploit, Empire, Cobalt Strike
+   │   ├── Verify system misconfigurations
+   │   │   ├── Techniques: Configuration review, file permission analysis
+   │   │   └── Tools: Lynis, AIDE (Advanced Intrusion Detection Environment)
+   │   ├── Identify outdated software and components
+   │   │   ├── Techniques: Software version scanning, patch management review
+   │   │   └── Tools: OpenVAS, Nessus, Nmap scripting engine (NSE)
+   │   └── Prioritize vulnerabilities for exploitation
+   │       ├── Techniques: Risk-based prioritization, exploitability assessment
+   │       └── Tools: Risk assessment frameworks, vulnerability scanners
+   └── Tools
+       ├── OWASP ZAP (Web application security scanner)
+       ├── Nessus (Vulnerability scanner)
+       └── Nmap (Network scanning tool)
+
+3. Exploitation and Post-Exploitation
+   ├── Exploitation
+   │   ├── Gain Access
+   │   │   ├── Techniques: Exploiting vulnerabilities, leveraging misconfigurations
+   │   │   └── Tools: Metasploit, Empire, Cobalt Strike
+   │   ├── Escalate Privileges
+   │   │   ├── Techniques: Privilege escalation techniques, credential theft
+   │   │   └── Tools: Mimikatz, PowerSploit, CrackMapExec
+   │   ├── Maintain Access
+   │   │   ├── Techniques: Backdoors, rootkits, persistent mechanisms
+   │   │   └── Tools: Covenant, PoshC2, Cobalt Strike
+   │   ├── Pivoting
+   │   │   ├── Techniques: Expanding access within the network
+   │   │   └── Tools: SSH tunneling, proxy chaining
+   │   └── Cover Tracks
+   │       ├── Techniques: Deleting logs, modifying timestamps
+   │       └── Tools: Metasploit Meterpreter scripts, custom cleanup scripts
+   ├── Post-Exploitation
+   │   ├── Gather Further Information
+   │   │   ├── Techniques: Data exfiltration, network mapping
+   │   │   └── Tools: BloodHound, PowerView, CrackMapExec
+   │   ├── Lateral Movement
+   │   │   ├── Techniques: Exploiting trust relationships, cross-compromise
+   │   │   └── Tools: BloodHound, CrackMapExec, Metasploit
+   │   └── Maintain Persistence
+   │       ├── Techniques: Establishing backdoors, using scheduled tasks
+   │       └── Tools: Covenant, PoshC2, Metasploit
+   └── Tools
+       ├── Mimikatz (Credential extraction tool)
+       ├── BloodHound (Active Directory enumeration tool)
+       └── CrackMapExec (Post-exploitation tool)
+
+4. Reporting and Communication
+   ├── Report Preparation
+   │   ├── Executive Summary
+   │   ├── Technical Details
+   │   ├── Risk Assessment
+   │   ├── Recommendations
+   │   ├── Screenshots and Logs
+   │   └── Document Findings
+   ├── Presentation of Findings
+   │   ├── Meet with Stakeholders
+   │   ├── Answer Questions
+   │   ├── Provide Remediation Advice
+   │   └── Obtain Sign-off
+   ├── Tools
+   │   ├── Microsoft Office Suite (Word, Excel, PowerPoint)
+   │   ├── Markdown Editors (for technical documentation)
+   │   ├── Reporting Templates (CEH/OSCP specific templates)
+   │   └── Screenshots and Evidence (Snipping Tool, Kali Linux tools)
+   └── Communication
+       ├── Maintain Open Communication with Stakeholders
+       ├── Provide Clear and Timely Updates
+       ├── Address Concerns and Questions Professionally
+       ├── Collaborate with Blue Team for Post-Engagement Analysis
+       ├── Follow Up on Remediation Progress
+       └── Conduct Knowledge Transfer Sessions
+
+5. Post-Engagement Activities
+   ├── Lessons Learned
+   │   ├── Review Engagement Successes and Challenges
+   │   ├── Identify Improvements for Future Engagements
+   │   ├── Document Best Practices and Lessons Learned
+   │   └── Incorporate Feedback into Red Team Processes
+   ├── Continuous Improvement
+   │   ├── Update Red Team Tactics, Techniques, and Procedures (TTPs)
+   │   ├── Stay Abreast of Latest Threats and Exploits
+   │   ├── Participate in Red Team Exercises and Training
+   │   └── Contribute to Security Community and Knowledge Sharing
+   └── Documentation and Archiving
+       ├── Archive Engagement Materials Securely
+       ├── Maintain Updated Vulnerability and Exploit Repositories
+       ├── Document Post-Engagement Analysis and Recommendations
+       └── Ensure Compliance with Legal and Ethical Guidelines
+
+6. Legal and Ethical Considerations
+   ├── Compliance
+   │   ├── Adhere to Rules of Engagement (ROE)
+   │   ├── Obtain Necessary Permissions and Authorizations
+   │   ├── Ensure Data Privacy and Confidentiality
+   │   ├── Respect Non-Disclosure Agreements (NDAs)
+   │   └── Comply with Industry Standards and Regulations
+   ├── Ethics
+   │   ├── Conduct Ethical Hacking Practices
+   │   ├── Do No Harm (Minimize Impact on Production Systems)
+   │   ├── Report Vulnerabilities Responsibly (Responsible Disclosure)
+   │   └── Promote a Culture of Ethical Security Testing
+   └── Legal
+       ├── Understand Legal Implications of Security Testing
+       ├── Seek Legal Advice for Ambiguous Cases
+       ├── Maintain Documentation for Legal Purposes
+       └── Collaborate with Legal Teams as Necessary
+
